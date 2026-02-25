@@ -1,0 +1,812 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cruz Roja - Juntos por la humanidad. Descubre nuestros servicios, voluntariado y cómo puedes ayudar.">
+    <title>Cruz Roja | Juntos Somos Imparables</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-cross">
+                <div class="cross-vertical"></div>
+                <div class="cross-horizontal"></div>
+            </div>
+            <p class="loader-text">Cruz Roja Imbabura</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-cross">
+                    <div class="logo-cross-v"></div>
+                    <div class="logo-cross-h"></div>
+                </div>
+                <span class="nav-logo-text">
+                    <span class="nav-logo-title">Cruz Roja</span>
+                    <span class="nav-logo-subtitle">Junta Provincial Imbabura</span>
+                </span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                <li class="nav-item-has-submenu">
+                    <a href="#nosotros" class="nav-link">Nosotros <i class="fas fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+                    <ul class="submenu">
+                        <li class="nav-item-has-submenu">
+                            <a href="conocenos.html" class="nav-link submenu-link">Conócenos <i class="fas fa-chevron-right nav-caret" aria-hidden="true"></i></a>
+                            <ul class="submenu submenu-nested">
+                                <li><a href="conocenos.html#historia-mision-vision" class="nav-link submenu-link">Historia, Misión y Visión</a></li>
+                                <li><a href="conocenos.html#principios-fundamentales" class="nav-link submenu-link">Principios Fundamentales</a></li>
+                                <li><a href="conocenos.html#repositorio-digital" class="nav-link submenu-link">Repositorio Digital</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item-has-submenu">
+                            <a href="#" class="nav-link submenu-link">Autoridades <i class="fas fa-chevron-right nav-caret" aria-hidden="true"></i></a>
+                            <ul class="submenu submenu-nested">
+                                <li><a href="elecciones-cantonales.html" class="nav-link submenu-link">Elecciones Cantonales</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item-has-submenu">
+                    <a href="voluntariado.html" class="nav-link">Voluntariado <i class="fas fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+                    <ul class="submenu">
+                        <li class="nav-item-has-submenu">
+                            <a href="programas-operativos.html" class="nav-link submenu-link">Programas Misionales <i class="fas fa-chevron-right nav-caret" aria-hidden="true"></i></a>
+                            <ul class="submenu submenu-nested">
+                                <li><a href="programas-operativos.html#gestion-riesgo" class="nav-link submenu-link">Gestión del Riesgo de Desastres</a></li>
+                                <li><a href="programas-operativos.html#salud-comunitaria" class="nav-link submenu-link">Salud Comunitaria</a></li>
+                                <li><a href="programas-operativos.html#principios-valores" class="nav-link submenu-link">Principios Fundamentales y Valores Humanitarios</a></li>
+                                <li><a href="programas-operativos.html#juventud" class="nav-link submenu-link">Juventud</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="servicios-salud.html" class="nav-link">Servicios</a></li>
+                <li><a href="donar-sangre.html" class="nav-link">Donar Sangre</a></li>
+               
+                
+            </ul>
+            <div class="nav-actions">
+                <a href="voluntariado.html" class="btn btn-donate">
+                    <i class="fas fa-heart"></i> Haz Voluntariado
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
+        <div class="hero-content">
+           <!-- <div class="hero-badge">
+                <i class="fas fa-hands-holding-heart"></i>
+                <span>Desde 1863 al servicio de la humanidad</span>
+            </div>-->
+            <h1 class="hero-title">
+                Juntos Somos
+                <span class="highlight">Imparables</span>
+            </h1>
+            <p class="hero-subtitle">
+                Trabajamos incansablemente para prevenir y aliviar el sufrimiento humano,
+                proteger la vida y la salud, y garantizar el respeto al ser humano.
+            </p>
+            <div class="hero-buttons">
+                <a href="#voluntariado" class="btn btn-primary btn-lg">
+                    <i class="fas fa-hand-holding-heart"></i> Únete como voluntario
+                </a>
+                <a href="#nosotros" class="btn btn-outline btn-lg">
+                    <i class="fas fa-play-circle"></i> Conoce más
+                </a>
+            </div>
+            <!--  <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="192">0</span>
+                    <span class="stat-label">Países</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="14">0</span><span class="stat-suffix">M+</span>
+                    <span class="stat-label">Voluntarios</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="160">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Años de servicio</span>
+                </div>
+            </div>-->
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Desliza hacia abajo</span>
+        </div>
+    </section>
+   
+
+
+    <!-- Humanitarian Movement Divider -->
+    <section class="humanitarian-divider">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <h2 class="section-title">Somos el Movimiento Humanitario <span class="highlight">más grande del mundo</span></h2>
+            </div>
+        </div>
+    </section>
+
+     <!-- Volunteer CTA Banner -->
+    <section class="volunteer-cta-banner">
+        <div class="volunteer-cta-bg"></div>
+        <div class="container volunteer-cta-container">
+           
+            <div class="volunteer-cta-main" data-animate="fade-up">
+                <h2>QUIERO SER <span class="highlight">VOLUNTARIO</span></h2>
+                <p>Somos más de 8000 voluntarios a nivel nacional</p>
+                <a href="#voluntariado" class="btn btn-primary btn-lg">
+                    <i class="fas fa-hand-holding-heart"></i> Unete al Voluntariado
+                </a>
+            </div>
+            <div class="volunteer-cta-stats" id="volunteerCtaStats" data-animate="fade-up" data-delay="120">
+                <div class="volunteer-cta-stat">
+                    <h4>Voluntarios Imbabura</h4>
+                    <p class="volunteer-counter" data-target="500" data-prefix="+" data-suffix="">0</p>
+                </div>
+                <div class="volunteer-cta-stat">
+                    <h4>Personas alcanzadas</h4>
+                    <p class="volunteer-counter" data-target="500" data-prefix="+" data-suffix=" mil">0</p>
+                </div>
+                <div class="volunteer-cta-stat">
+                    <h4>Pacientes atendidos</h4>
+                    <p class="volunteer-counter" data-target="100" data-prefix="+" data-suffix=" mil">0</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Operational Programs Section -->
+    <section id="programas-operativos" class="section operational-programs">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Programas Operativos</span>
+            </div>
+            <div class="operational-grid">
+                <article class="operational-card" data-animate="fade-up" data-delay="100">
+                    <div class="operational-media" aria-hidden="true">
+                        <i class="fas fa-house-flood-water"></i>
+                    </div>
+                    <h3>Gestión del Riesgo de Desastres</h3>
+                    <a href="programas-operativos.html#gestion-riesgo" class="operational-link">Ver más <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="operational-card" data-animate="fade-up" data-delay="200">
+                    <div class="operational-media" aria-hidden="true">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3>Salud y Desarrollo Comunitario</h3>
+                    <a href="programas-operativos.html#salud-comunitaria" class="operational-link">Ver más <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="operational-card" data-animate="fade-up" data-delay="300">
+                    <div class="operational-media" aria-hidden="true">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <h3>Principios Fundamentales y Valores Humanitarios</h3>
+                    <a href="programas-operativos.html#principios-valores" class="operational-link">Ver más <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="operational-card" data-animate="fade-up" data-delay="400">
+                    <div class="operational-media" aria-hidden="true">
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <h3>Juventud</h3>
+                    <a href="programas-operativos.html#juventud" class="operational-link">Ver más <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section
+    <section id="nosotros" class="section about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Quiénes somos</span>
+                <h2 class="section-title">Nuestra <span class="highlight">Misión</span></h2>
+                <p class="section-subtitle">
+                    Somos una organización humanitaria dedicada a proteger la vida
+                    y la dignidad de las personas más vulnerables.
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card" data-animate="fade-up" data-delay="100">
+                    <div class="about-card-icon">
+                        <i class="fas fa-shield-heart"></i>
+                    </div>
+                    <h3>Humanidad</h3>
+                    <p>Nacida del deseo de dar asistencia sin discriminación a los heridos en los campos de batalla, la
+                        Cruz Roja se esfuerza por prevenir y aliviar el sufrimiento humano.</p>
+                </div>
+                <div class="about-card" data-animate="fade-up" data-delay="200">
+                    <div class="about-card-icon">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <h3>Imparcialidad</h3>
+                    <p>No hace ninguna distinción de nacionalidad, raza, religión, condición social ni credo político.
+                        Se dedica únicamente a socorrer según la necesidad.</p>
+                </div>
+                <div class="about-card" data-animate="fade-up" data-delay="300">
+                    <div class="about-card-icon">
+                        <i class="fas fa-handshake-angle"></i>
+                    </div>
+                    <h3>Neutralidad</h3>
+                    <p>Para conservar la confianza de todos, la Cruz Roja se abstiene de tomar parte en las hostilidades
+                        y en las controversias de orden político, racial o religioso.</p>
+                </div>
+                <div class="about-card" data-animate="fade-up" data-delay="400">
+                    <div class="about-card-icon">
+                        <i class="fas fa-building-ngo"></i>
+                    </div>
+                    <h3>Independencia</h3>
+                    <p>Es independiente. Auxiliar de los poderes públicos en actividades humanitarias, se somete a las
+                        leyes que rigen sus respectivos países.</p>
+                </div>
+                <div class="about-card" data-animate="fade-up" data-delay="500">
+                    <div class="about-card-icon">
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <h3>Voluntariado</h3>
+                    <p>Es un movimiento de socorro voluntario y de carácter desinteresado, no motivado por el deseo de
+                        ganancia alguna.</p>
+                </div>
+                <div class="about-card" data-animate="fade-up" data-delay="600">
+                    <div class="about-card-icon">
+                        <i class="fas fa-earth-americas"></i>
+                    </div>
+                    <h3>Universalidad</h3>
+                    <p>Es universal. En ella todas las Sociedades tienen los mismos derechos y el deber de ayudarse
+                        mutuamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Services Section -->
+    <section id="servicios" class="section services">
+        <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Lo que hacemos</span>
+             <!--   <h2 class="section-title">Nuestros <span class="highlight">Servicios</span></h2>
+            --></div>
+            <div class="services-grid">
+
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-front">
+                        <img class="service-image"
+                            src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=80"
+                            alt="Voluntariado en accion">
+                        <h3 class="service-front-title">Voluntariado</h3>
+                    </div>
+                    <div class="service-back">
+                        <div class="service-icon">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Voluntariado</h3>
+                            <p>Programas de prevención de enfermedades, primeros auxilios, donación de sangre y asistencia
+                                médica a comunidades vulnerables.</p>
+                            <a href="#" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card featured health-service-card" data-animate="fade-up" data-delay="300" data-service-url="servicios-salud.html" role="link" tabindex="0" aria-label="Ir a Servicios de Salud">
+                    <div class="service-front">
+                        <img class="service-image"
+                            src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=80"
+                            alt="Servicios de salud y donacion">
+                        <h3 class="service-front-title">Servicios de Salud</h3>
+                    </div>
+                    <div class="service-back">
+                        <div class="service-icon">
+                            <i class="fas fa-droplet"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Servicios de Salud</h3>
+                            <p>Campañas permanentes de donación voluntaria de sangre. Tu donación puede salvar hasta tres
+                                vidas.</p>
+                            <a href="servicios-salud.html" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="400">
+                    <div class="service-front">
+                        <img class="service-image"
+                            src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70?auto=format&fit=crop&w=900&q=80"
+                            alt="Capacitacion en primeros auxilios">
+                        <h3 class="service-front-title">Capacitación</h3>
+                    </div>
+                    <div class="service-back">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Capacitación</h3>
+                            <p>Cursos de primeros auxilios, gestión de riesgos, socorrismo acuático y más para la formación
+                                de voluntarios y comunidad.</p>
+                            <a href="#" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Donation Banner -->
+    <section class="donation-banner">
+        <div class="container">
+            <div class="donation-content" data-animate="fade-up">
+                <div class="donation-text">
+                    <h2>Tu donación <span class="highlight">cambia vidas</span></h2>
+                    <p>Cada aporte cuenta. Con tu ayuda podemos llegar a más personas que necesitan asistencia
+                        humanitaria.</p>
+                </div>
+                <div class="donation-actions">
+                    <a href="#donar" class="btn btn-donate-lg">
+                        <i class="fas fa-heart"></i> Donar ahora
+                    </a>
+                    <!-- <div class="donation-amount">
+                        <span>Desde</span>
+                        <strong>$5.000</strong>
+                        <span>al mes</span>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+   
+
+    <!-- Volunteer Section
+    <section id="voluntariado" class="section volunteer">
+        <div class="container">
+            <div class="volunteer-wrapper">
+                <div class="volunteer-info" data-animate="fade-right">
+                    <span class="section-tag">Sé parte del cambio</span>
+                    <h2 class="section-title">Únete como <span class="highlight">Voluntario</span></h2>
+                    <p>Ser voluntario de la Cruz Roja es una forma de vida. Es comprometerse con la humanidad y poner tu
+                        tiempo y habilidades al servicio de los demás.</p>
+                    <div class="volunteer-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Formación continua</h4>
+                                <p>Accede a cursos y talleres gratuitos de primeros auxilios, liderazgo y más.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Red de contactos</h4>
+                                <p>Conecta con miles de voluntarios en tu país y alrededor del mundo.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Impacto real</h4>
+                                <p>Tus acciones transforman vidas y comunidades de manera tangible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="volunteer-form-wrapper" data-animate="fade-left">
+                    <form id="volunteerForm" class="volunteer-form">
+                        <h3>Registro de Voluntario</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="volName">Nombre completo</label>
+                                <input type="text" id="volName" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="volEmail">Correo electrónico</label>
+                                <input type="email" id="volEmail" name="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="volPhone">Teléfono</label>
+                                <input type="tel" id="volPhone" name="phone" placeholder="+57 300 000 0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="volCity">Ciudad</label>
+                                <input type="text" id="volCity" name="city" placeholder="Tu ciudad">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="volArea">Área de interés</label>
+                            <select id="volArea" name="area" required>
+                                <option value="" disabled selected>Selecciona un área</option>
+                                <option value="emergencias">Emergencias y Desastres</option>
+                                <option value="salud">Salud Comunitaria</option>
+                                <option value="sangre">Donación de Sangre</option>
+                                <option value="social">Apoyo Social</option>
+                                <option value="educacion">Educación y Capacitación</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="volMessage">¿Por qué quieres ser voluntario?</label>
+                            <textarea id="volMessage" name="message" rows="3"
+                                placeholder="Cuéntanos tu motivación..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Enviar solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+
+
+    <!-- Contact Section
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Contáctanos</span>
+                <h2 class="section-title">¿Necesitas <span class="highlight">Ayuda</span>?</h2>
+                <p class="section-subtitle">
+                    Estamos disponibles para atenderte. No dudes en comunicarte con nosotros.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Línea de emergencia</h4>
+                            <p>132 (Gratuita 24/7)</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Correo electrónico</h4>
+                            <p>contacto@cruzroja.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Sede principal</h4>
+                            <p>Av. 68 No. 66-31, Bogotá D.C.</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Horario de atención</h4>
+                            <p>Lun - Vie: 8:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Síguenos</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-animate="fade-left">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Envíanos un mensaje</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Nombre</label>
+                                <input type="text" id="contactName" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Asunto</label>
+                            <input type="text" id="contactSubject" name="subject"
+                                placeholder="¿En qué podemos ayudarte?">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Mensaje</label>
+                            <textarea id="contactMessage" name="message" rows="4" placeholder="Escribe tu mensaje..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>  -->
+
+    <!-- Sedes Cantonales -->
+    <section id="sedes" class="section branch-offices">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Nuestras filiales</span>
+                
+            </div>
+            <div class="branch-grid">
+                <article class="branch-card" data-animate="fade-up" data-delay="100">
+                    <img class="branch-image"
+                        src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80"
+                        alt="Infraestructura Sede Cantonal 1">
+                    <div class="branch-content">
+                        <h3>Junta Cantonal Otavalo</h3>
+                        <div class="branch-map">
+                            <iframe title="Mapa Sede Cantonal 1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4466118248126!2d-78.26193268577909!3d0.22901985201819616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2a14907764958d%3A0x4f25e03972578fdd!2sC.%20Bol%C3%ADvar%201203%2C%20Otavalo!5e0!3m2!1ses!2sec!4v1771607890391!5m2!1ses!2sec" 
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+                <article class="branch-card" data-animate="fade-up" data-delay="200">
+                    <img class="branch-image"
+                        src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1200&q=80"
+                        alt="Infraestructura Sede Cantonal 2">
+                    <div class="branch-content">
+                        <h3>Junta Provincial Imbabura</h3>
+                        <div class="branch-map">
+                            <iframe title="Mapa Sede Cantonal 2" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                src="https://maps.google.com/maps?q=8VXH+7G5%2C%20Eugenio%20Espejo%2C%20Ibarra&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+                <article class="branch-card" data-animate="fade-up" data-delay="300">
+                    <img class="branch-image"
+                        src="https://images.unsplash.com/photo-1519494080410-f9aa8f52faca?auto=format&fit=crop&w=1200&q=80"
+                        alt="Infraestructura Sede Cantonal 3">
+                    <div class="branch-content">
+                        <h3>Junta Cantonal Antonio Ante</h3>
+                        <div class="branch-map">
+                            <iframe title="Mapa Sede Cantonal 3" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63836.01581867002!2d-78.28771747832032!3d0.33286750000000753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2a3f6fc0b7ac4b%3A0x8a19383ad1d02f16!2sCentros%20M%C3%A9dicos%20Cruz%20Roja%20Atuntaqui!5e0!3m2!1ses!2sec!4v1771608004005!5m2!1ses!2sec"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+     <!-- News Section -->
+    <section id="noticias" class="section news">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Últimas noticias</span>
+            <!--    <h2 class="section-title">Mantente <span class="highlight">Informado</span></h2>
+                <p class="section-subtitle">
+                    Conoce las últimas noticias y actividades de la Cruz Roja.
+                </p>-->
+            </div>
+            <div class="news-carousel" data-animate="fade-up">
+                <button class="news-nav prev" id="newsPrev" aria-label="Noticias anteriores" type="button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="news-viewport">
+                    <div class="news-grid" id="newsTrack">
+                <article class="news-card" data-animate="fade-up" data-delay="100">
+                    <div class="news-image">
+                        <div class="news-image-placeholder">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <span class="news-category">Noticia 1</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 15 Feb 2026</span>
+                            <span><i class="fas fa-clock"></i> 5 min lectura</span>
+                        </div>
+                        <h3>Respuesta humanitaria ante la temporada de lluvias</h3>
+                        <p>Equipos de emergencia desplegados en las zonas más afectadas para brindar asistencia
+                            inmediata a las familias damnificadas.</p>
+                        <a href="#" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card" data-animate="fade-up" data-delay="200">
+                    <div class="news-image">
+                        <div class="news-image-placeholder">
+                            <i class="fas fa-hand-holding-droplet"></i>
+                        </div>
+                        <span class="news-category">Noticia 2</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 10 Feb 2026</span>
+                            <span><i class="fas fa-clock"></i> 3 min lectura</span>
+                        </div>
+                        <h3>Jornada de donación de sangre: récord de participación</h3>
+                        <p>Más de 500 donantes participaron en nuestra última jornada nacional de donación de sangre
+                            voluntaria.</p>
+                        <a href="#" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card" data-animate="fade-up" data-delay="200">
+                    <div class="news-image">
+                        <div class="news-image-placeholder">
+                            <i class="fas fa-hand-holding-droplet"></i>
+                        </div>
+                        <span class="news-category">Noticia 3</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 10 Feb 2026</span>
+                            <span><i class="fas fa-clock"></i> 3 min lectura</span>
+                        </div>
+                        <h3>Jornada de donación de sangre: récord de participación</h3>
+                        <p>Más de 500 donantes participaron en nuestra última jornada nacional de donación de sangre
+                            voluntaria.</p>
+                        <a href="#" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card" data-animate="fade-up" data-delay="200">
+                    <div class="news-image">
+                        <div class="news-image-placeholder">
+                            <i class="fas fa-hand-holding-droplet"></i>
+                        </div>
+                        <span class="news-category">Noticia 4</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 10 Feb 2026</span>
+                            <span><i class="fas fa-clock"></i> 3 min lectura</span>
+                        </div>
+                        <h3>Jornada de donación de sangre: récord de participación</h3>
+                        <p>Más de 500 donantes participaron en nuestra última jornada nacional de donación de sangre
+                            voluntaria.</p>
+                        <a href="#" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card" data-animate="fade-up" data-delay="200">
+                    <div class="news-image">
+                        <div class="news-image-placeholder">
+                            <i class="fas fa-hand-holding-droplet"></i>
+                        </div>
+                        <span class="news-category">Noticia 5</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 10 Feb 2026</span>
+                            <span><i class="fas fa-clock"></i> 3 min lectura</span>
+                        </div>
+                        <h3>Jornada de donación de sangre: récord de participación</h3>
+                        <p>Más de 500 donantes participaron en nuestra última jornada nacional de donación de sangre
+                            voluntaria.</p>
+                        <a href="#" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card" data-animate="fade-up" data-delay="300">
+                    <div class="news-image">
+                        <div class="news-image-placeholder">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <span class="news-category">Noticia 6</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> 5 Feb 2026</span>
+                            <span><i class="fas fa-clock"></i> 4 min lectura</span>
+                        </div>
+                        <h3>Nuevos cursos de primeros auxilios abiertos al público</h3>
+                        <p>Inscríbete en nuestros cursos certificados de primeros auxilios, RCP y manejo de emergencias
+                            para toda la comunidad.</p>
+                        <a href="#" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                    </div>
+                </div>
+                <button class="news-nav next" id="newsNext" aria-label="Noticias siguientes" type="button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-cross">
+                            <div class="logo-cross-v"></div>
+                            <div class="logo-cross-h"></div>
+                        </div>
+                        <span>Cruz Roja</span>
+                    </a>
+                    <p>Trabajamos para prevenir y aliviar el sufrimiento humano, proteger la vida y la salud, y
+                        garantizar el respeto al ser humano.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>tics@imbabura.cruzroja.org.ec</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Eugenio Espejo y Velasco, Ibarra - Imbabura</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>062950888</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lun - Vie: 07:00 a 18:00</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Sab - Dom: 07:00 a 15:30</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cruz Roja. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTop" class="scroll-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

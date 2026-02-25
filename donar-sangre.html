@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informacion sobre donacion de sangre: requisitos, motivos, beneficios y preguntas frecuentes.">
+    <title>Donar Sangre | Cruz Roja Imbabura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav id="bloodNavbar" class="navbar blood-navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-cross">
+                    <div class="logo-cross-v"></div>
+                    <div class="logo-cross-h"></div>
+                </div>
+                <span class="nav-logo-text">
+                    <span class="nav-logo-title">Cruz Roja</span>
+                    <span class="nav-logo-subtitle">Junta Provincial Imbabura</span>
+                </span>
+            </a>
+            <ul class="nav-links" id="bloodNavLinks">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                 <li class="nav-item-has-submenu">
+                    <a href="index.html#nosotros" class="nav-link">Nosotros <i class="fas fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+                    <ul class="submenu">
+                        <li class="nav-item-has-submenu">
+                            <a href="conocenos.html" class="nav-link submenu-link">Conócenos <i class="fas fa-chevron-right nav-caret" aria-hidden="true"></i></a>
+                            <ul class="submenu submenu-nested">
+                                <li><a href="conocenos.html#historia-mision-vision" class="nav-link submenu-link">Historia, Misión y Visión</a></li>
+                                <li><a href="conocenos.html#principios-fundamentales" class="nav-link submenu-link">Principios Fundamentales</a></li>
+                                <li><a href="conocenos.html#repositorio-digital" class="nav-link submenu-link">Repositorio Digital</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item-has-submenu">
+                            <a href="#" class="nav-link submenu-link">Autoridades <i class="fas fa-chevron-right nav-caret" aria-hidden="true"></i></a>
+                            <ul class="submenu submenu-nested">
+                                <li><a href="elecciones-cantonales.html" class="nav-link submenu-link">Elecciones Cantonales</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item-has-submenu">
+                    <a href="voluntariado.html" class="nav-link">Voluntariado <i class="fas fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+                    <ul class="submenu">
+                        <li class="nav-item-has-submenu">
+                            <a href="programas-operativos.html" class="nav-link submenu-link">Programas Misionales <i class="fas fa-chevron-right nav-caret" aria-hidden="true"></i></a>
+                            <ul class="submenu submenu-nested">
+                                <li><a href="programas-operativos.html#gestion-riesgo" class="nav-link submenu-link">Gestión del Riesgo de Desastres</a></li>
+                                <li><a href="programas-operativos.html#salud-comunitaria" class="nav-link submenu-link">Salud Comunitaria</a></li>
+                                <li><a href="programas-operativos.html#principios-valores" class="nav-link submenu-link">Principios Fundamentales y Valores Humanitarios</a></li>
+                                <li><a href="programas-operativos.html#juventud" class="nav-link submenu-link">Juventud</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="servicios-salud.html" class="nav-link">Servicios</a></li>
+                
+                <li><a href="donar-sangre.html" class="nav-link active">Donar Sangre</a></li>
+                   
+            </ul>
+            <div class="nav-actions">
+                <a href="#requisitos" class="btn btn-donate">
+                    <i class="fas fa-heart"></i> Quiero donar
+                </a>
+                <button class="nav-toggle" id="bloodNavToggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="health-hero blood-hero">
+        <div class="container">
+            <div class="health-cdc-banner blood-cdc-banner">
+                <article class="health-cdc-main blood-cdc-main">
+                    <h1>Donar Sangre </h1>
+                    <h3>Es un acto "Voluntario, solidario y altruista, tu mayor recompensa es salvar vidas"</h3>
+                </article>
+                <aside class="health-cdc-side ">
+                    <a href="#" class="health-cdc-mini">
+                        <h3><i class="fas fa-list-check"></i> Horarios de atención</h3>
+                        <p>Lunes a Viernes de 8:00 a 17:00 hrs</p>
+                        <p>Sábados y Domingos de 8:00 a 12:00 hrs</p>
+                    </a>
+                    <a href="#porque-donar" class="health-cdc-mini">
+                        <h3><i class="fas fa-heart-pulse"></i> Por que donar</h3>
+                        <p>6 motivos para tomar accion</p>
+                    </a>
+                    <a href="#mitos-verdades" class="health-cdc-mini">
+                        <h3><i class="fas fa-circle-question"></i> Mitos y verdades</h3>
+                        <p>Resuelve dudas frecuentes</p>
+                    </a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section id="requisitos" class="section blood-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Requisitos para donar sangre</span>
+            </div>
+            <div class="blood-grid blood-requirements-grid">
+                <article class="blood-card blood-requirement-card">
+                    <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80" alt="Persona mayor de edad lista para donar sangre">
+                    <div class="blood-card-content">
+                        <span class="blood-card-step">01</span>
+                        <h3>Peso adecuado</h3>
+                        <p>Presentar documento de identificación y pesar más de 50 kg (110 libras) .</p>
+                    </div>
+                </article>
+                <article class="blood-card blood-requirement-card">
+                    <img src="https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?auto=format&fit=crop&w=1200&q=80" alt="Control de peso para donacion">
+                    <div class="blood-card-content">
+                        <span class="blood-card-step">02</span>
+                        <h3>Autorización y edad</h3>
+                        <p>Tener entre 18 y 65 años (menores de edad con 17 años cumplidos pueden donar con autorización del representante legal).</p>
+                    </div>
+                </article>
+                <article class="blood-card blood-requirement-card">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80" alt="Persona descansando correctamente">
+                    <div class="blood-card-content">
+                        <span class="blood-card-step">03</span>
+                        <h3>No cirugías o tatuajes</h3>
+                        <p>No se debe haber sometido a cirugías o realizado tatuajes durante los últimos 12 meses.</p>
+                    </div>
+                </article>
+                <article class="blood-card blood-requirement-card">
+                    <img src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?auto=format&fit=crop&w=1200&q=80" alt="Desayuno saludable antes de donar sangre">
+                    <div class="blood-card-content">
+                        <span class="blood-card-step">04</span>
+                        <h3>Buena salud general</h3>
+                        <p>No haber tenido síntomas de gripe o cualquier tipo de enfermedad en los últimos 8 días.</p>
+                    </div>
+                </article>
+                <article class="blood-card blood-requirement-card">
+                    <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&fit=crop&w=1200&q=80" alt="Revision medica previa a donacion de sangre">
+                    <div class="blood-card-content">
+                        <span class="blood-card-step">05</span>
+                        <h3>Hidratación</h3>
+                        <p>Tomar bastante líquido antes de la donación.</p>
+                    </div>
+                </article>
+                <article class="blood-card blood-requirement-card">
+                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=1200&q=80" alt="Documento de identidad para donacion">
+                    <div class="blood-card-content">
+                        <span class="blood-card-step">06</span>
+                        <h3>Llevar documento de identidad</h3>
+                        <p>Presenta tu cedula o documento oficial para completar el registro.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="porque-donar" class="section blood-section blood-section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Por que donar sangre</span>
+            </div>
+            <div class="blood-grid blood-grid-reasons">
+                <article class="blood-reason">
+                    <i class="fas fa-heart-pulse" aria-hidden="true"></i>
+                    <h3>Una sola donación puede salvar hasta 3 vidas</h3>
+                </article>
+                <article class="blood-reason">
+                    <i class="fas fa-hospital-user" aria-hidden="true"></i>
+                    <h3>Mejora el flujo sanguíneo</h3>
+                   </article>
+                <article class="blood-reason">
+                    <i class="fas fa-people-group" aria-hidden="true"></i>
+                    <h3>Ayuda a depurar triglicéridos</h3>
+                       </article>
+                <article class="blood-reason">
+                    <i class="fas fa-droplet" aria-hidden="true"></i>
+                    <h3>Reduce el riesgo de padecer infartos y accidentes cardiovasculares</h3>
+                    
+                </article>
+                <article class="blood-reason">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <h3>Equilibra los niveles de hierro en la sangre</h3>
+                </article>
+                <article class="blood-reason">
+                    <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                    <h3>Ofrece información sobre nuestro estado de salud general</h3>
+                       </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="blood-benefits">
+        <div class="container">
+            <div class="blood-benefits-layout">
+                <div class="blood-benefits-text">
+                    <h3>Beneficios de donar sangre</h3>
+                    <p>Cinco productos sanguineos (sangre, plasma y plaquetas) para el/la donante, o cinco productos sanguineos (sangre, plasma y plaquetas) para hijos menores de 17 anos, o dos productos sanguineos (sangre, plasma y plaquetas) para sus padres mayores a 65 anos. Valido hasta 6 meses luego de su ultima donacion.</p>
+                </div>
+                <div class="blood-benefits-image">
+                    <img src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=1200&q=80" alt="Personal de salud en donacion de sangre">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mitos-verdades" class="section blood-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Mitos y verdades</span>
+            </div>
+            <div class="blood-faq">
+                <article class="blood-faq-item open">
+                    <button class="blood-faq-question" type="button" aria-expanded="true">
+                        <span>¿Donar Sangre Engorda?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="blood-faq-answer">
+                        <p>Donar sangre no engorda, la persona tiene que mantener la ingesta de alimentos conforme su dieta habitual. </p>
+                    </div>
+                </article>
+                <article class="blood-faq-item">
+                    <button class="blood-faq-question" type="button" aria-expanded="false">
+                        <span>Si dono sangre, ¿puedo presentar anemia?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="blood-faq-answer">
+                        <p>No, la anemia no se presenta por donar sangre debido a que el organismo se encarga de producir las células y remplazar las células donadas.</p>
+                    </div>
+                </article>
+                <article class="blood-faq-item">
+                    <button class="blood-faq-question" type="button" aria-expanded="false">
+                        <span>¿Me puedo contagiar de alguna enfermedad si dono sangre?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="blood-faq-answer">
+                        <p>No, el material que se utiliza es nuevo, estéril y se descarta después del uso.</p>
+                    </div>
+                </article>
+                <article class="blood-faq-item">
+                    <button class="blood-faq-question" type="button" aria-expanded="false">
+                        <span>¿Solo puedo donar sangre una vez al año?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="blood-faq-answer">
+                        <p>Se puede donar más de una vez al año. Las mujeres pueden donar cada cuatro meses y los hombres cada tres meses.</p>
+                    </div>
+                </article>
+                <article class="blood-faq-item">
+                    <button class="blood-faq-question" type="button" aria-expanded="false">
+                        <span>¿Con tatuajes se puede donar sangre?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="blood-faq-answer">
+                        <p>Se puede donar sangre después que hayan pasado 6 meses desde la aplicación del tatuaje. Lo mismo ocurre con los piercing.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-campanas" class="footer">
+        <div class="container">
+            <div class="blood-footer-cta">
+                <figure class="blood-footer-callcenter">
+                    <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&w=1200&q=80" alt="Equipo de call center para campanas institucionales">
+                </figure>
+                <div class="blood-footer-content">
+                    <h3>¿Quieres llevar a cabo campanas institucionales?</h3>
+                    <p>Estamos aqui para ayudarte!</p>
+                    <p><strong>contactanos</strong></p>
+                    <ul class="blood-footer-contact-list">
+                        <li>
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <a href="https://wa.me/59362950888" target="_blank" rel="noopener noreferrer">+593 62 950 888</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:bancosangre@imbabura.cruzroja.org.ec">bancosangre@imbabura.cruzroja.org.ec</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            <a href="tel:+59362950888">062950888</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cruz Roja. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Politica de privacidad</a>
+                    <a href="#">Terminos y condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const navbar = document.getElementById('bloodNavbar');
+            if (!navbar) return;
+
+            const updateNavbarState = () => {
+                if (window.scrollY > 80) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            };
+
+            window.addEventListener('scroll', updateNavbarState, { passive: true });
+            updateNavbarState();
+        })();
+
+        (function () {
+            const navToggle = document.getElementById('bloodNavToggle');
+            const navLinks = document.getElementById('bloodNavLinks');
+            if (!navToggle || !navLinks) return;
+
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('open');
+                document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+            });
+
+            navLinks.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    navToggle.classList.remove('active');
+                    navLinks.classList.remove('open');
+                    document.body.style.overflow = '';
+                });
+            });
+        })();
+
+        (function () {
+            const items = document.querySelectorAll('.blood-faq-item');
+            const setAnswerHeight = (item, shouldOpen) => {
+                const answer = item.querySelector('.blood-faq-answer');
+                if (!answer) return;
+                answer.style.maxHeight = shouldOpen ? `${answer.scrollHeight}px` : '0px';
+            };
+
+            items.forEach((item) => {
+                const button = item.querySelector('.blood-faq-question');
+                if (!button) return;
+
+                setAnswerHeight(item, item.classList.contains('open'));
+
+                button.addEventListener('click', () => {
+                    const isOpen = item.classList.contains('open');
+                    items.forEach((faq) => {
+                        faq.classList.remove('open');
+                        const faqButton = faq.querySelector('.blood-faq-question');
+                        if (faqButton) faqButton.setAttribute('aria-expanded', 'false');
+                        setAnswerHeight(faq, false);
+                    });
+
+                    if (!isOpen) {
+                        item.classList.add('open');
+                        button.setAttribute('aria-expanded', 'true');
+                        setAnswerHeight(item, true);
+                    }
+                });
+            });
+
+            window.addEventListener('resize', () => {
+                items.forEach((item) => {
+                    setAnswerHeight(item, item.classList.contains('open'));
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
