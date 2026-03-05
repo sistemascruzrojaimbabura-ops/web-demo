@@ -103,6 +103,25 @@ function createParticles() {
 
 createParticles();
 
+// ===== HERO CAROUSEL =====
+(function initHeroCarousel() {
+    const slides = Array.from(document.querySelectorAll('.hero-carousel .hero-slide'));
+    if (slides.length < 2) return;
+
+    let currentIndex = 0;
+
+    function showSlide(nextIndex) {
+        slides[currentIndex].classList.remove('is-active');
+        currentIndex = nextIndex;
+        slides[currentIndex].classList.add('is-active');
+    }
+
+    setInterval(() => {
+        const next = (currentIndex + 1) % slides.length;
+        showSlide(next);
+    }, 5000);
+})();
+
 // ===== COUNTER ANIMATION =====
 function animateCounters() {
     const counters = document.querySelectorAll('.stat-number[data-target]');
